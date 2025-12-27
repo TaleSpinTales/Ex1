@@ -5,7 +5,7 @@
     body {
         margin: 0;
         font-family: "Bree Serif", serif;
-        background: url("background.jpg") repeat fixed;
+        background: url("images/background.jpg") repeat fixed;
     }
 
     .page {
@@ -17,7 +17,7 @@
 
     .banner {
         height: 350px;
-        background-image: url("banner.png");
+        background-image: url("images/banner.png");
         background-repeat: no-repeat;
         background-size: 100% 100%;
         background-position: center;
@@ -82,7 +82,7 @@
     }
 
     .endorsement-block {
-        background-image: url("clowds.webp");
+        background-image: url("images/clouds.webp");
         background-repeat: repeat;
     }
 
