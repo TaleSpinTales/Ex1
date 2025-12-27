@@ -1,0 +1,67 @@
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: "Bree Serif", serif;
+        background: url("background.jpg") repeat fixed;
+    }
+
+    .page {
+        width: 80%;
+        margin: 3% auto;
+        background: #fff;
+        box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .banner {
+        height: 350px;
+        background-image: url("banner.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+    }
+
+    .banner-text {
+        position: relative;
+        height: 100%;
+        margin-left: 2%;
+        overflow: visible;
+    }
+
+    .banner-profile-img {
+        position: absolute;
+        top: 70%;
+        left: -2%;
+        width: 200px;
+        height: 200px;
+        border: 10px solid #ffff;
+        border-radius: 50%;
+        box-sizing: border-box;
+        object-fit: cover;
+        display: block;
+    }
+
+    .title-bar {
+        background: #fff;
+        text-align: center;
+        padding: 70px 0 25px;
+    }
+
+    .page-title {
+        margin: 0;
+        font-family: "One Rammeretto One", cursive;
+        font-size: 3vw;
+        text-shadow: 3px 3px 1px #999;
+    }
+
+    @media (max-width: 768px) {
+        .page {
+            width: 95%;
+        }
+
+        .page-title {
+            font-size: 8vw;
+        }
+    }
