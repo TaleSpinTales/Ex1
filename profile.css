@@ -1,95 +1,23 @@
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
 body{
   margin:0;
   font-family:"Bree Serif", serif;
-  background: url("images/background.jpg") repeat fixed;
+  background:#eee;
+  padding:40px;
 }
 
-.page{
-  width:80%;
-  margin:3% auto;
-  background:#fff;
-  box-shadow:0 10px 10px 10px rgba(0,0,0,0.2);
-}
-
-.banner{
-  height:350px;
-  background-image:url("images/banner.png");
-  background-repeat:no-repeat;
-  background-size:100% 100%;
-  background-position:center;
-}
-
-.banner-text{
-  position:relative;
-  height:100%;
-  margin-left:2%;
-  overflow:visible;
-}
-
-.banner-profile-img{
-  position:absolute;
-  top:70%;
-  left:-2%;
-  width:200px;
-  height:200px;
-  border:10px solid #fff;
-  border-radius:50%;
-  object-fit:cover;
-  display:block;
-}
-
-.title-bar{
-  background:#fff;
-  text-align:center;
-  padding:70px 0 25px;
-}
-
-.page-title{
-  margin:0;
-  font-family:"Rammetto One", cursive;
-  font-size:3vw;
-  text-shadow:3px 3px 1px #999;
-}
-
-.content-block{
-  display:flex;
-  gap:4%;
-  padding:2% 5%;
-}
-
-.content-text,
-.content-media{ flex:1; }
-
-.content-media{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-}
-
-.content-img{
-  width:30vw;
-  max-width:400px;
-  max-height:600px;
-  height:auto;
-  object-fit:contain;
-}
-
-.endorsement-block{
-  padding:2% 5%;
-}
-
+/* ===== Wrapper ===== */
 .endorse-wrapper{
-  border:6px solid #f3e400;
-  background:transparent;
   max-width:1100px;
   margin:0 auto;
-  position:relative;
-  overflow:visible;
-  padding:0;
+  position: relative;
+  padding:2% 5%;
 }
 
+/* ===== Cloud Background ===== */
 .endorse-wrapper::before{
   content:'';
   position:absolute;
@@ -97,75 +25,63 @@ body{
   left:-30px;
   right:-30px;
   bottom:-30px;
-  background:url("images/clouds.webp") repeat;
+  background:url("clouds.webp") repeat;
   background-size:200px;
   z-index:-1;
 }
 
+/* ===== Layout ===== */
 .endorse-row{
   display:flex;
-  gap:0;
-  align-items:stretch;
+  align-items:center;
 }
 
+/* ===== Image ===== */
 .endorse-image{
   flex:1;
   display:flex;
-  background:transparent;
-}
-
-.endorse-image .inner{
-  width:100%;
-  padding:10px;
-  display:flex;
-  align-items:center;
   justify-content:center;
-  overflow:visible;
+  align-items:center;
 }
 
 .endorse-image img{
   width:30vw;
   max-width:400px;
-  max-height:600px;
   height:auto;
   display:block;
-  position:relative;
-  z-index:10;
 }
 
+/* ===== Text ===== */
 .endorse-text{
   flex:1;
-  display:flex;
-  background:transparent;
 }
 
-.endorse-text .inner{
-  width:100%;
-  padding:2% 5%;
-}
-
-.endorse-title{
-  margin:0 0 12px;
+.endorse-text h2{
+  margin:0 0 16px;
   text-align:center;
   font-size:2.5vw;
   text-transform:uppercase;
 }
 
+/* ===== Endorsements ===== */
 .endorsement{
   background:#fff;
-  border-left:10px solid #cccaca;
-  padding:10px 10px 15px;
+  padding:14px;
   margin-bottom:15px;
   text-align:center;
+  border-radius:8px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.08);
 }
 
-.endorsement p{ margin:0 0 10px; }
+.endorsement p{
+  margin:0 0 10px;
+}
 
 .endorsement hr{
   width:40%;
   margin:10px auto;
   border:none;
-  border-top:2px solid #cccaca;
+  border-top:2px solid #ddd;
 }
 
 .endorsement .by{
@@ -173,43 +89,18 @@ body{
   font-style:italic;
 }
 
-.friends-block{
-  flex-direction:column;
-  gap:12px;
-}
-
-.friends-title{
-  font-size:2.5vw;
-}
-
-.friends-gallery{
-  width:100%;
-  display:grid;
-  grid-template-columns:repeat(4, 1fr);
-  align-items:flex-end;
-  gap:12px;
-}
-
-.friend-img{
-  width:200px;
-  height:300px;
-  padding:10px;
-  object-fit:cover;
-}
-
+/* ===== Responsive ===== */
 @media (max-width:768px){
-  .page{ width:95%; }
-  .page-title{ font-size:8vw; }
-
-  .content-block{ flex-direction:column; }
-  .content-img{ width:80%; }
-
-  .endorse-row{ flex-direction:column; gap:6px; }
-  .endorse-image{ order:-1; }
-  .endorse-title{ font-size:6vw; }
+  .endorse-row{
+    flex-direction:column;
+  }
 
   .endorse-image img{
-    width:50vw;
+    width:55vw;
     max-width:300px;
+  }
+
+  .endorse-text h2{
+    font-size:6vw;
   }
 }
