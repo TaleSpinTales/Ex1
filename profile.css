@@ -65,7 +65,7 @@
     }
 
     .info-row {
-        width: 110%;
+        width: 100%;
         margin-top: 18px;
         display: flex;
         gap: 18px;
@@ -74,21 +74,22 @@
 
     .info-label {
         margin: 0;  
-        width: 100%;
+        width: 40%;
     }
 
     .info-value {
         margin: 0;
-        width: 70%;
-    }
-
-    .info-value {
-        padding-left: 0;
+        width: 40%;
     }
 
     .info-row ul.info-value{
         padding-left: 18px;
         margin: 0;
+    }
+
+    .info-block .content-img{
+        width: 35vw;
+        max-width: 480px;
     }
 
     .content-block {
