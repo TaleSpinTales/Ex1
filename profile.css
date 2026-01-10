@@ -63,6 +63,33 @@
         text-shadow: 3px 3px 1px #999999;
     }
 
+    .info-row {
+        width: 110%;
+        margin-top: 18px;
+        display: flex;
+        gap: 18px;
+        align-items: flex-start;
+    }
+
+    .info-label {
+        margin: 0;  
+        width: 100%;
+    }
+
+    .info-value {
+        margin: 0;
+        width: 70%;
+    }
+
+    .info-value {
+        padding-left: 0;
+    }
+
+    .info-row ul.info-value{
+        padding-left: 18px;
+        margin: 0;
+    }
+
     .content-block {
         display: flex;
         gap: 4%;
