@@ -46,6 +46,7 @@
         box-sizing: border-box;
         object-fit: cover;
         display: block;
+        transform: translate(-20px);
     }
 
     .title-bar {
