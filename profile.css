@@ -17,10 +17,15 @@
 
     .banner {
         height: 350px;
+        position: relative;
         background-image: url("images/banner.png");
         background-repeat: no-repeat;
         background-size: 100% 100%;
         background-position: center;
+    }
+
+    .banner > div {
+        height: 100%;
     }
 
     .banner-text {
@@ -36,7 +41,7 @@
         left: -2%;
         width: 200px;
         height: 200px;
-        border: 10px solid #ffff;
+        border: 10px solid #fff;
         border-radius: 50%;
         box-sizing: border-box;
         object-fit: cover;
@@ -51,9 +56,11 @@
 
     .page-title {
         margin: 0;
-        font-family: "One Rammeretto One", cursive;
+        font-family: "One Rammetto One", cursive;
         font-size: 3vw;
-        text-shadow: 3px 3px 1px #999;
+        text-align: center;
+        padding-top: 10px;
+        text-shadow: 3px 3px 1px #999999;
     }
 
     .content-block {
