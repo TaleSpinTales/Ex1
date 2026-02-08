@@ -1,3 +1,3 @@
-Need to add commands for each function   
+Make sure each picture is fit to the mobile
  
   
